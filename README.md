@@ -25,4 +25,13 @@ The file input01 can be named anything you want, but it must be a .txt file that
 5
 ```
 
+The code in `create_test_case.cpp` allows you to create a test file (like the one shown immediately above). To run it:
+
+```
+g++ -std=c++17 -o create create_test_case.cpp 
+
+./create input03 20 10
+```
+This will create the file input03.txt in your inputs/ subfolder, and will populate it with 20 entries chosen randomly from 1 to 10. You can of course change all three arguments after `./create` in order to customize your test file.
+
 I haven't found any evidence that an algorithm like this has been considered by the CS community; if that holds up, then perhaps the outcome of this contest could lead to a conference talk or a publication.
