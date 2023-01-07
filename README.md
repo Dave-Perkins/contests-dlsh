@@ -7,6 +7,22 @@ I have written starter code that is shared in this repository, so that you can e
 
 I wrote a quick answer to my own contest that works like this: find the minimum and maximum entries in the given sequence, average those, and then iterate through the sequence, pushing those entries that are lower than that average into one vector, and those higher than that average into another vector; finally, concatenate those two vectors. When I run my algorithm on a random list of 100 integers, the number of inversions dropped from 2664 to 1250, and it took 23 milliseconds. 
 
-This code is in `main.cpp`.
+This code is in `main.cpp` and you can run it as follows:
+
+```
+g++ -std=c++17 -o main main.cpp
+
+./main input01
+```
+
+The file input01 can be named anything you want, but it must be a .txt file that is inside a folder called inputs and the contents must look something like this:
+
+```
+3
+5
+11
+8
+5
+```
 
 I haven't found any evidence that an algorithm like this has been considered by the CS community; if that holds up, then perhaps the outcome of this contest could lead to a conference talk or a publication.
