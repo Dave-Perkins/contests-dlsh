@@ -5,6 +5,8 @@ It is well-known that the fastest sorting algorithms have time complexity O(n lo
 
 I have written starter code that is shared in this repository, so that you can easily jump right into the fray. I can explain what makes an algorithm run in O(n) time for those who have yet to study that subject; it's not hard to understand. See the Discord server at https://discord.gg/3gC4VNKHZx for questions and answers on this and all other topics.
 
-I wrote a quick answer to my own contest that works like this: find the minimum and maximum entries in the given sequence, average those, and then iterate through the sequence, pushing those entries that are lower than that average into one vector, and those higher than that average into another vector; finally, concatenate those two vectors. When I run my algorithm on a random list of 100 integers, the number of inversions dropped from 2664 to 1250, and it took 23 milliseconds. I can share this code with interested parties; your job would be to find a better solution than mine.
+I wrote a quick answer to my own contest that works like this: find the minimum and maximum entries in the given sequence, average those, and then iterate through the sequence, pushing those entries that are lower than that average into one vector, and those higher than that average into another vector; finally, concatenate those two vectors. When I run my algorithm on a random list of 100 integers, the number of inversions dropped from 2664 to 1250, and it took 23 milliseconds. 
+
+This code is in `main.cpp`.
 
 I haven't found any evidence that an algorithm like this has been considered by the CS community; if that holds up, then perhaps the outcome of this contest could lead to a conference talk or a publication.
